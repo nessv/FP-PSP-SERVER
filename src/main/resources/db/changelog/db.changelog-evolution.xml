@@ -17,4 +17,11 @@
         <sqlFile path="sql/2017-08-25T17:00.sql" relativeToChangelogFile="true"/>
     </changeSet>
 
+    <!--
+    Adds created_date column in table task
+    -->
+    <changeSet id="2017-08-31T11:30" author="nvaldez">
+      <sqlFile path="sql/2017-08-31T11:30.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
 </databaseChangeLog>
