@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import py.org.fundacionparaguaya.pspserver.service.dto.CountryDTO;
-import py.org.fundacionparaguaya.pspserver.service.CountryService;
+import py.org.fundacionparaguaya.pspserver.system.dtos.CountryDTO;
+import py.org.fundacionparaguaya.pspserver.system.services.CountryService;
 
 @RestController
 @RequestMapping(value = "/api/v1/countries")

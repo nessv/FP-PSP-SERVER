@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import py.org.fundacionparaguaya.pspserver.service.dto.FamilyDTO;
-import py.org.fundacionparaguaya.pspserver.service.FamilyService;
+import py.org.fundacionparaguaya.pspserver.families.dtos.FamilyDTO;
+import py.org.fundacionparaguaya.pspserver.families.services.FamilyService;
 
 @RestController
 @RequestMapping(value = "/api/v1/families")

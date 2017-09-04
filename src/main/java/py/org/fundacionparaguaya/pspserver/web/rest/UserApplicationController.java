@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import py.org.fundacionparaguaya.pspserver.service.dto.UserApplicationDTO;
-import py.org.fundacionparaguaya.pspserver.service.UserApplicationService;
+import py.org.fundacionparaguaya.pspserver.network.dtos.UserApplicationDTO;
+import py.org.fundacionparaguaya.pspserver.network.services.UserApplicationService;
 
 @RestController
 @RequestMapping(value = "/api/v1/user-applications")

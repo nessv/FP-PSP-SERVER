@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import py.org.fundacionparaguaya.pspserver.service.dto.UserRoleDTO;
-import py.org.fundacionparaguaya.pspserver.service.UserRoleService;
+import py.org.fundacionparaguaya.pspserver.security.dtos.UserRoleDTO;
+import py.org.fundacionparaguaya.pspserver.security.services.UserRoleService;
 
 @RestController
 @RequestMapping(value = "/api/v1/user-roles")

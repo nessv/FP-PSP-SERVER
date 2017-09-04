@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import py.org.fundacionparaguaya.pspserver.service.dto.CityDTO;
-import py.org.fundacionparaguaya.pspserver.service.CityService;
+import py.org.fundacionparaguaya.pspserver.system.dtos.CityDTO;
+import py.org.fundacionparaguaya.pspserver.system.services.CityService;
 
 @RestController
 @RequestMapping(value = "/api/v1/cities")

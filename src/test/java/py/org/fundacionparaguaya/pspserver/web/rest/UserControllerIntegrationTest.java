@@ -1,6 +1,5 @@
 package py.org.fundacionparaguaya.pspserver.web.rest;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,11 +15,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import py.org.fundacionparaguaya.pspserver.PspServerApplication;
-import py.org.fundacionparaguaya.pspserver.service.UserService;
-import py.org.fundacionparaguaya.pspserver.service.constants.ErrorCodes;
-import py.org.fundacionparaguaya.pspserver.service.dto.UserDTO;
+import py.org.fundacionparaguaya.pspserver.security.services.UserService;
+import py.org.fundacionparaguaya.pspserver.common.constants.ErrorCodes;
+import py.org.fundacionparaguaya.pspserver.security.dtos.UserDTO;
 import py.org.fundacionparaguaya.pspserver.util.TestHelper;
-import py.org.fundacionparaguaya.pspserver.web.rest.errors.ExceptionTranslatorAdvice;
 
 import java.util.Arrays;
 import java.util.List;
