@@ -65,11 +65,11 @@ public class LabelServiceImpl implements LabelService {
     }
 
     @Override
-    public List<LabelDTO> getLabelsByDescription(String code) {
-        checkArgument(code != null, "Argument was %s but expected not null", code);
+    public List<LabelDTO> getLabelsByDescription(String description) {
+        checkArgument(description != null, "Argument was %s but expected not null", description);
 
        List<LabelEntity> list = repository.findAll(
-               where(likeCode(code)));
+               where(likeCode(description)));
        return list.stream().map(mapper::entityToDto).collect(Collectors.toList());
     }
 

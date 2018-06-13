@@ -11,5 +11,5 @@ public interface LabelService {
     LabelDTO getLabelById(Long labelId);
     List<LabelDTO> getAllLabels();
     LabelDTO addLabel(LabelDTO labelDTO);
-    List<LabelDTO> getLabelsByDescription(String code);
+    List<LabelDTO> getLabelsByDescription(String description);
 }

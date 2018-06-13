@@ -37,8 +37,8 @@ public class LabelController {
 
     @GetMapping("/list")
     public ResponseEntity<List<LabelDTO>> getLabelsByDescription(
-            @RequestParam("label") String label) throws UnknownResourceException {
-        List<LabelDTO> dto = service.getLabelsByDescription(label);
+            @RequestParam("desc") String description) throws UnknownResourceException {
+        List<LabelDTO> dto = service.getLabelsByDescription(description);
         return ResponseEntity.ok(dto);
     }
 
